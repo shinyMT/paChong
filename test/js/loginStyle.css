@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.warp_panel{
+    height: 100%;
+    width: 100%;
+	/* 设置弹性布局 */
+    display: flex;
+  	justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg2.jpg);
+    /* 根据当前页面大小自动裁剪 */
+    background-size: cover;
+}
+.login_panel{
+    height: 400px;
+    width: 500px;
+    background-color: rgba(50, 48, 62, 0.6);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* 面板边框阴影找面板颜色周围的反差色，浅或深 */
+    box-shadow: 0px 0px 16px 2px rgba(233, 234, 239, 0.8);
+}
+.login_panel>div{
+    height: 40px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.login_panel>div:nth-of-type(1){
+    width: 60%;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    /* 设置文字阴影： 水平  垂直  模糊半径  颜色 */
+    text-shadow: 0px 0px 10px #ACACB4;
+}
+.login_panel>div:nth-of-type(2){
+    /* 以左上角的点为圆心画半径 */
+    border-radius: 20px;
+}
+.login_panel>div:nth-of-type(3){
+    border-radius: 20px;
+}
+.login_panel>div:nth-of-type(4){
+    width: 160px;
+    border-radius: 20px;
+}
+.login_panel>div>input{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border:none;
+    /* 水平  垂直  模糊半径(10~20)  扩展投射范围(2~5) */
+    box-shadow: 0px 0px 10px 3px #999999;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
